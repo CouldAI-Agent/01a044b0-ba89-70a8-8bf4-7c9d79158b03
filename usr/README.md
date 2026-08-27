@@ -1,30 +1,29 @@
-# ExpressVPN Free Clone UI
+# Aplicación del Clima Real
 
-Una aplicación móvil construida en Flutter que simula la interfaz y experiencia de usuario de un cliente de VPN moderno (inspirado en ExpressVPN). Esta aplicación proporciona una interfaz de usuario atractiva con animaciones de conexión, selector de servidores virtuales y métricas simuladas.
+Una aplicación meteorológica completamente funcional construida con Flutter que consume datos reales en vivo a través de la API pública de [Open-Meteo](https://open-meteo.com/).
 
 ## Características
-* **Conexión simulada:** Interfaz de usuario con estado inactivo, conectando y conectado.
-* **Selector de servidores:** Lista de ubicaciones virtuales (Estados Unidos, Reino Unido, Japón, etc.).
-* **Métricas en tiempo real:** Visualización simulada de velocidad de descarga, subida y ping.
-* **Diseño responsivo:** Funciona de manera fluida tanto en dispositivos móviles, tablets como en escritorio.
+- **Datos reales**: Temperatura, velocidad del viento y condiciones climáticas obtenidas de una API pública.
+- **Selector de ciudades**: Permite alternar entre varias ciudades principales (Madrid, Ciudad de México, Buenos Aires, Bogotá, Santiago).
+- **Diseño Adaptativo**: Funciona en dispositivos móviles y navegadores web.
+- **Sin requerir claves**: Utiliza una API gratuita que no necesita autenticación.
 
-## Flujos principales
-1. **Inicio de la aplicación:** El usuario llega a la pantalla principal donde puede ver el estado actual (Desconectado) y la ubicación seleccionada.
-2. **Selección de servidor:** El usuario puede tocar la ubicación para abrir un modal inferior (Bottom Sheet) y seleccionar un nuevo país.
-3. **Conexión:** Al presionar el botón central, la aplicación muestra una animación de "conectando..." y luego cambia al estado "Conectado", mostrando las métricas de red.
+## Tecnologías
+- Flutter
+- Paquete `http` para solicitudes de red.
+- Open-Meteo API (JSON).
 
-## Stack tecnológico
-* **Flutter:** SDK para la interfaz multiplataforma.
-* **Dart:** Lenguaje de programación.
+## Cómo ejecutar
 
-## Instrucciones de ejecución
-Para ejecutar la aplicación localmente:
-1. Asegúrate de tener Flutter instalado (versión 3.x).
-2. Clona el repositorio.
-3. Ejecuta `flutter pub get` para instalar las dependencias.
-4. Ejecuta `flutter run` para iniciar la aplicación en tu dispositivo o emulador.
+Asegúrate de tener Flutter instalado y ejecuta:
+
+```bash
+flutter pub get
+flutter run
+```
 
 ---
 
-## Sobre CouldAI
-[CouldAI](https://could.ai) es un creador de aplicaciones con inteligencia artificial para aplicaciones multiplataforma. Transforma prompts en aplicaciones nativas reales para iOS, Android, Web y Escritorio mediante agentes autónomos de IA que diseñan, construyen, prueban, despliegan e iteran aplicaciones listas para producción. Esta aplicación fue generada utilizando la tecnología de CouldAI.
+## Creado con CouldAI
+
+Esta aplicación fue generada con [CouldAI](https://could.ai), un constructor de aplicaciones de IA multiplataforma que convierte indicaciones en aplicaciones nativas reales para iOS, Android, Web y Escritorio mediante agentes de IA autónomos.
